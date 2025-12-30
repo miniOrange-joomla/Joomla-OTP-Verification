@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="library" version="3.0" method="upgrade">
+    <name>LIB_MINIORANGEOTPPLUGIN_NAME</name>
+    <libraryname>miniorangeotpplugin</libraryname>
+    <author>miniOrange Security Software Pvt. Ltd.</author>
+	<authorEmail>info@xecurify.com</authorEmail>
+	<authorUrl>www.miniorange.com</authorUrl>
+    <creationDate>Jan 2018</creationDate>
+    <copyright>Copyright 2015 miniOrange. All Rights Reserved.</copyright>
+    <version>6.1</version>
+    <description>LIB_MINIORANGEOTPPLUGIN_XML_DESCRIPTION</description>
+    <files>
+		<filename>index.html</filename>
+        <folder>utility</folder>
+    </files>
+    <languages>
+        <language tag="en-GB">language/en-GB/en-GB.lib_miniorangeotpplugin.ini</language>
+        <language tag="en-GB">language/en-GB/en-GB.lib_miniorangeotpplugin.sys.ini</language>
+        <language tag="de-DE">language/de-DE/de-DE.lib_miniorangeotpplugin.ini</language>
+        <language tag="de-DE">language/de-DE/de-DE.lib_miniorangeotpplugin.sys.ini</language>
+    </languages>
+</extension>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0" type="package" method="upgrade">
+	<name>Package miniOrange OTP Verification</name>
+	<packagename>MiniorangeOTPVerification</packagename>
+	<license>GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html</license>
+	<version>6.1</version>
+	<author>miniOrange Security Software Pvt. Ltd.</author>
+	<authorEmail>info@xecurify.com</authorEmail>
+	<creationDate>Jan 2018</creationDate>
+	<description></description>
+	<scriptfile>pkg_script.php</scriptfile>
+	<files>
+		<file type="plugin" id="miniorangesendotp" group="user">plg_user_miniorangesendotp.zip</file>
+		<file type="plugin" id="miniorangeverifyotp" group="system">plg_system_miniorangeverifyotp.zip</file>
+		<file type="component" id="joomlaotp" >com_joomlaotp.zip</file>
+		<file type="library" id="miniorangeotpplugin">lib_miniorangeotpplugin.zip</file>
+	</files>
+	<languages>
+		<language tag="en-GB">language/en-GB/en-GB.pkg_miniorangeotpverification.ini</language>
+		<language tag="en-GB">language/en-GB/en-GB.pkg_miniorangeotpverification.sys.ini</language>
+		<language tag="de-DE">language/de-DE/de-DE.pkg_miniorangeotpverification.ini</language>
+		<language tag="de-DE">language/de-DE/de-DE.pkg_miniorangeotpverification.sys.ini</language>
+	</languages>
+	<updateservers>
+		<server type="extension" priority="1" name="MiniorangeOtpVerification">http://miniorange.com/joomla_otp_plugin_update.xml</server>
+	</updateservers>
+</extension>
