@@ -1,0 +1,1 @@
+ALTER TABLE `#__miniorange_otp_custom_message` ADD COLUMN `mo_custom_both_message` VARCHAR (1048) NOT NULL;

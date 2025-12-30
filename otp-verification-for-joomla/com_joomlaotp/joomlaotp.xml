@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.0" method="upgrade">
+ 
+	<name>COM_JOOMLAOTP</name>
+	<creationDate>Jan 2018</creationDate>
+	<author>miniOrange Security Software Pvt. Ltd.</author>
+	<authorEmail>info@xecurify.com</authorEmail>
+	<authorUrl>http://miniorange.com</authorUrl>
+	<copyright>Copyright Info</copyright>
+	<license>GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html</license>
+	<version>6.1</version>
+	<description>COM_JOOMLAOTP_DESCRIPTION</description>
+ 
+	<install> <!-- Runs on install -->
+		<sql>
+			<file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+		</sql>
+	</install>
+	<uninstall> <!-- Runs on uninstall -->
+		<sql>
+			<file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+		</sql>
+	</uninstall>
+	<update> <!-- Runs on update -->
+        <schemas>
+			<schemapath type="mysql">sql/updates/mysql</schemapath>
+		</schemas>
+    </update>
+		
+	<administration>
+		<!-- Administration Menu Section -->
+		<menu link="option=com_joomlaotp&amp;view=accountsetup" view="accountsetup" alt="Joomla OTP Verification">COM_JOOMLAOTP_MENU</menu>
+		<submenu>
+			<menu link="option=com_joomlaotp&amp;view=accountsetup&amp;tab-panel=account" view="accountsetup" alt="Joomla OTP Verification/Account Setup">COM_JOOMLAOTP_ACCOUNT_SETUP</menu>
+			<menu link="option=com_joomlaotp&amp;view=accountsetup&amp;tab-panel=setting" view="accountsetup" alt="Joomla OTP Verification/Settings">COM_JOOMLAOTP_ACCOUNT_SETTINGS</menu>
+			<menu link="option=com_joomlaotp&amp;view=accountsetup&amp;tab-panel=custom_forms" view="accountsetup" alt="Joomla OTP Verification/RS Form Settings">COM_JOOMLAOTP_TAB11_FORM_SETTINGS</menu>
+			<menu link="option=com_joomlaotp&amp;view=accountsetup&amp;tab-panel=custom_message" view="accountsetup" alt="Joomla OTP Verification/Custom Messages">COM_JOOMLAOTP_ACCOUNT_CUSTOM_MESSAGES</menu>
+			<menu link="option=com_joomlaotp&amp;view=accountsetup&amp;tab-panel=configuration" view="accountsetup" alt="Joomla OTP Verification/CONFIGURATION">COM_JOOMLAOTP_ACCOUNT_CUSTOM_CONFIGURATION</menu>
+			<menu link="option=com_joomlaotp&amp;view=accountsetup&amp;tab-panel=addons" view="accountsetup" alt="Joomla OTP Verification/Addons">COM_JOOMLAOTP_ADDONS</menu>
+			<menu link="option=com_joomlaotp&amp;view=accountsetup&amp;tab-panel=otp_report" view="accountsetup" alt="Joomla OTP Verification/OTP Transactions">COM_JOOMLAOTP_TAB8_OTP_TRANSACTIONS</menu>
+			<menu link="option=com_joomlaotp&amp;view=accountsetup&amp;tab-panel=request_demo" view="accountsetup" alt="Joomla OTP Verification/Demo">COM_JOOMLAOTP_DEMO</menu>
+		</submenu>
+		
+		
+		<files folder="admin">
+			<!-- Admin Main File Copy Section -->
+			<filename>index.html</filename>
+			<filename>joomlaotp.php</filename>
+			<filename>controller.php</filename>
+			<!-- helper files section -->
+			<folder>assets</folder>
+			<!-- helper files section -->
+			<folder>helpers</folder>
+			<!-- SQL files section -->
+			<folder>sql</folder>
+			<!-- tables files section -->
+			<folder>tables</folder>
+			<!-- models files section -->
+			<folder>models</folder>
+			<!-- views files section -->
+			<folder>views</folder>
+			<!-- controllers files section -->
+			<folder>controllers</folder>
+		</files>
+		<languages folder="admin/language">
+        	<language tag="en-GB">en-GB/en-GB.com_joomlaotp.ini</language>
+            <language tag="en-GB">en-GB/en-GB.com_joomlaotp.sys.ini</language>
+			<language tag="de-DE">de-DE/de-DE.com_joomlaotp.ini</language>
+			<language tag="de-DE">de-DE/de-DE.com_joomlaotp.sys.ini</language>
+			<language tag="fr-FR">fr-FR/fr-FR.com_joomlaotp.ini</language>
+			<language tag="fr-FR">fr-FR/fr-FR.com_joomlaotp.sys.ini</language>
+			<language tag="es-ES">es-ES/es-ES.com_joomlaotp.ini</language>
+			<language tag="es-ES">es-ES/es-ES.com_joomlaotp.sys.ini</language>
+			<language tag="zh-CN">zh-CN/zh-CN.com_joomlaotp.ini</language>
+			<language tag="zh-CN">zh-CN/zh-CN.com_joomlaotp.sys.ini</language>
+			<language tag="cs-CZ">cs-CZ/cs-CZ.com_joomlaotp.ini</language>
+			<language tag="cs-CZ">cs-CZ/cs-CZ.com_joomlaotp.sys.ini</language>
+			<language tag="da-DK">da-DK/da-DK.com_joomlaotp.ini</language>
+			<language tag="da-DK">da-DK/da-DK.com_joomlaotp.sys.ini</language>
+			<language tag="el-GR">el-GR/el-GR.com_joomlaotp.ini</language>
+			<language tag="el-GR">el-GR/el-GR.com_joomlaotp.sys.ini</language>
+			<language tag="hu-HU">hu-HU/hu-HU.com_joomlaotp.ini</language>
+			<language tag="hu-HU">hu-HU/hu-HU.com_joomlaotp.sys.ini</language>
+			<language tag="ja-JP">ja-JP/ja-JP.com_joomlaotp.ini</language>
+			<language tag="ja-JP">ja-JP/ja-JP.com_joomlaotp.sys.ini</language>
+			<language tag="pt-BR">pt-BR/pt-BR.com_joomlaotp.ini</language>
+			<language tag="pt-BR">pt-BR/pt-BR.com_joomlaotp.sys.ini</language>
+			<language tag="sv-SE">sv-SE/sv-SE.com_joomlaotp.ini</language>
+			<language tag="sv-SE">sv-SE/sv-SE.com_joomlaotp.sys.ini</language>
+			<language tag="sr-YU">sr-YU/sr-YU.com_joomlaotp.ini</language>
+			<language tag="sr-YU">sr-YU/sr-YU.com_joomlaotp.sys.ini</language>
+			<language tag="sr-RS">sr-RS/sr-RS.com_joomlaotp.ini</language>
+			<language tag="sr-RS">sr-RS/sr-RS.com_joomlaotp.sys.ini</language>
+			<language tag="th-TH">th-TH/th-TH.com_joomlaotp.ini</language>
+			<language tag="th-TH">th-TH/th-TH.com_joomlaotp.sys.ini</language>
+			<language tag="it-IT">it-IT/it-IT.com_joomlaotp.ini</language>
+			<language tag="it-IT">it-IT/it-IT.com_joomlaotp.sys.ini</language>
+			<language tag="nl-NL">nl-NL/nl-NL.com_joomlaotp.ini</language>
+			<language tag="nl-NL">nl-NL/nl-NL.com_joomlaotp.sys.ini</language>
+		</languages>
+	</administration>
+	 <updateservers><server type="extension" priority="1" name="MiniorangeOtpVerification">http://miniorange.com/joomla_otp_plugin_update.xml</server>
+		</updateservers>
+</extension>

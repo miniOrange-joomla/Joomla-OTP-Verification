@@ -1,0 +1,1 @@
+ALTER TABLE `#__miniorange_otp_customer` ADD COLUMN `license_plan` VARCHAR (255) NOT NULL;
